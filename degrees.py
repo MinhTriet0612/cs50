@@ -12,7 +12,6 @@ people = {}
 # Maps movie_ids to a dictionary of: title, year, stars (a set of person_ids)
 movies = {}
 
-
 def load_data(directory):
     """
     Load data from CSV files into memory.
@@ -66,7 +65,7 @@ def main():
 
     # Load data from files into memory
     print("Loading data...")
-    load_data("./small")
+    load_data(directory)
     print("Data loaded.")
 
     source = person_id_for_name(input("Name: "))
